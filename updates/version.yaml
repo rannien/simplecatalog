@@ -1,0 +1,8 @@
+1.0.1: First version of SimpleCatalog
+1.0.2:
+        - Create catalog products table
+        - create_products_table.php
+        - Create catalog categories table
+        - create_categories_table.php
+1.0.3:
+        - Small fixes on string lenght

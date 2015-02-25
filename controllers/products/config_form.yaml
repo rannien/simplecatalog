@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Product
+
+# Model Form Field configuration
+form: $/wboyz/simplecatalog/models/product/fields.yaml
+
+# Model Class name
+modelClass: Wboyz\SimpleCatalog\Models\Product
+
+# Default redirect location
+defaultRedirect: wboyz/simplecatalog/products
+
+# Create page
+create:
+    title: Create Product
+    redirect: wboyz/simplecatalog/products/update/:id
+    redirectClose: wboyz/simplecatalog/products
+
+# Update page
+update:
+    title: Edit Product
+    redirect: wboyz/simplecatalog/products
+    redirectClose: wboyz/simplecatalog/products
+
+# Preview page
+preview:
+    title: Preview Product
