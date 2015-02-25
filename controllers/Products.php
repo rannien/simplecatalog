@@ -9,6 +9,8 @@ use Backend\Classes\Controller;
  */
 class Products extends Controller
 {
+    public $requiredPermissions = ['wboyz.simplecatalog.access_products'];
+    
     public $implement = [
         'Backend.Behaviors.FormController',
         'Backend.Behaviors.ListController'
