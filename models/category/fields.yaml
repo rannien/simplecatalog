@@ -3,6 +3,27 @@
 # ===================================
 
 fields:
-    id:
-        label: ID
-        disabled: true
+
+  name:
+    label: wboyz.simplecatalog::lang.category.name
+    placeholder: wboyz.simplecatalog::lang.category.name_placeholder
+    span: left
+
+  slug:
+    label: wboyz.simplecatalog::lang.category.slug
+    span: right
+    placeholder: wboyz.simplecatalog::lang.category.slug_placeholder
+    attributes:
+        data-input-preset: 'input[name="Category[name]"]'
+        
+  short_description:
+    label: wboyz.simplecatalog::lang.category.short_description
+    placeholder: wboyz.simplecatalog::lang.category.s_description_placeholder
+    type: textarea
+    span: left
+    
+  description:
+    label: wboyz.simplecatalog::lang.category.description
+    placeholder: wboyz.simplecatalog::lang.category.description_placeholder
+    type: textarea
+    span: right

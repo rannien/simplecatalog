@@ -3,6 +3,24 @@
 # ===================================
 
 columns:
-    id:
-        label: ID
-        searchable: true
+
+  name:
+    label: wboyz.simplecatalog::lang.product.name
+    searchable: true
+
+  category:
+    label: wboyz.simplecatalog::lang.product.category
+    relation: category
+    select: name
+    searchable: true
+    sortable: false
+
+  created_at:
+    label: wboyz.simplecatalog::lang.product.created
+    type: date
+    invisible: true
+
+  updated_at:
+    label: wboyz.simplecatalog::lang.product.updated
+    type: date
+    invisible: true

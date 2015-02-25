@@ -2,7 +2,6 @@
 
 use System\Classes\PluginBase;
 use Backend;
-use Lang;
 
 /**
  * SimpleCatalog Plugin Information File
@@ -28,23 +27,23 @@ class Plugin extends PluginBase
     public function registerNavigation()
     {
         return [
-            'products' => [
-                'label'       => Lang::get('wboyz.simplecatalog::lang.catalog.menu_label'),
+            'catalog' => [
+                'label'       => 'wboyz.simplecatalog::lang.catalog.menu_label',
                 'url'         => Backend::url('wboyz/simplecatalog/products'),
-                'icon'        => 'icon-pencil',
+                'icon'        => 'icon-newspaper-o',
                 'permissions' => ['wboyz.simplecatalog.*'],
                 'order'       => 500,
 
                 'sideMenu' => [
                     'products' => [
-                        'label'       => Lang::get('wboyz.simplecatalog::lang.catalog.products'),
-                        'icon'        => 'icon-copy',
+                        'label'       => 'wboyz.simplecatalog::lang.catalog.products',
+                        'icon'        => 'icon-tag',
                         'url'         => Backend::url('wboyz/simplecatalog/products'),
                         'permissions' => ['wboyz.simplecatalog.access_products'],
                     ],
                     'categories' => [
-                        'label'       => Lang::get('wboyz.simplecatalog::lang.catalog.categories'),
-                        'icon'        => 'icon-copy',
+                        'label'       => 'wboyz.simplecatalog::lang.catalog.categories',
+                        'icon'        => 'icon-list',
                         'url'         => Backend::url('wboyz/simplecatalog/categories'),
                         'permissions' => ['wboyz.simplecatalog.access_categories']
                     ],
@@ -57,8 +56,8 @@ class Plugin extends PluginBase
     public function registerPermissions()
     {
         return [
-            'wboyz.simplecatalog.access_products'    => ['label' => Lang::get('wboyz.simplecatalog::lang.products.list_title')],
-            'wboyz.simplecatalog.access_categories'  => ['label' => Lang::get('wboyz.simplecatalog::lang.categories.list_title')]
+            'wboyz.simplecatalog.access_products'    => ['label' => 'wboyz.simplecatalog::lang.products.list_title'],
+            'wboyz.simplecatalog.access_categories'  => ['label' => 'wboyz.simplecatalog::lang.categories.list_title']
         ];
     }   
 

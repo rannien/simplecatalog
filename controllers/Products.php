@@ -23,6 +23,6 @@ class Products extends Controller
     {
         parent::__construct();
         
-        BackendMenu::setContext('Wboyz.SimpleCatalog', 'simplecatalog', 'products');
+        BackendMenu::setContext('Wboyz.SimpleCatalog', 'catalog', 'products');
     }
 }

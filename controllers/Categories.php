@@ -22,6 +22,6 @@ class Categories extends Controller
     {
         parent::__construct();
 
-        BackendMenu::setContext('Wboyz.SimpleCatalog', 'simplecatalog', 'categories');
+        BackendMenu::setContext('Wboyz.SimpleCatalog', 'catalog', 'categories');
     }
 }
