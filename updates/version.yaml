@@ -6,3 +6,5 @@
         - create_categories_table.php
 1.0.3:
         - Small fixes on string lenght
+1.0.4:
+        - Amount renamed to quantity

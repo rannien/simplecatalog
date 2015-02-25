@@ -2,6 +2,7 @@
 
 use System\Classes\PluginBase;
 use Backend;
+use Lang;
 
 /**
  * SimpleCatalog Plugin Information File
@@ -28,7 +29,7 @@ class Plugin extends PluginBase
     {
         return [
             'products' => [
-                'label'       => 'Catalog',
+                'label'       => Lang::get('wboyz.simplecatalog::lang.catalog.menu_label'),
                 'url'         => Backend::url('wboyz/simplecatalog/products'),
                 'icon'        => 'icon-pencil',
                 'permissions' => ['wboyz.simplecatalog.*'],
@@ -36,13 +37,13 @@ class Plugin extends PluginBase
 
                 'sideMenu' => [
                     'products' => [
-                        'label'       => 'Products',
+                        'label'       => Lang::get('wboyz.simplecatalog::lang.catalog.products'),
                         'icon'        => 'icon-copy',
                         'url'         => Backend::url('wboyz/simplecatalog/products'),
                         'permissions' => ['wboyz.simplecatalog.access_products'],
                     ],
                     'categories' => [
-                        'label'       => 'Categories',
+                        'label'       => Lang::get('wboyz.simplecatalog::lang.catalog.categories'),
                         'icon'        => 'icon-copy',
                         'url'         => Backend::url('wboyz/simplecatalog/categories'),
                         'permissions' => ['wboyz.simplecatalog.access_categories']
@@ -56,8 +57,8 @@ class Plugin extends PluginBase
     public function registerPermissions()
     {
         return [
-            'wboyz.simplecatalog.access_products'    => ['label' => 'Manage the catalog products'],
-            'wboyz.simplecatalog.access_categories'  => ['label' => 'Manage the catalog categories']
+            'wboyz.simplecatalog.access_products'    => ['label' => Lang::get('wboyz.simplecatalog::lang.products.list_title')],
+            'wboyz.simplecatalog.access_categories'  => ['label' => Lang::get('wboyz.simplecatalog::lang.categories.list_title')]
         ];
     }   
 

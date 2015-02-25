@@ -18,7 +18,7 @@ class CreateProductsTable extends Migration
             $table->string('slug', 150)->index();
             $table->string('short_description', 150)->nullable();
             $table->mediumText('description')->nullable();
-            $table->decimal('amount', 19, 4);
+            $table->decimal('quantity', 19, 4);
             $table->tinyInteger('status')->default(1);
             $table->timestamps();
         });
