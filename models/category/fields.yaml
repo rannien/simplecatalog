@@ -7,12 +7,14 @@ fields:
   name:
     label: wboyz.simplecatalog::lang.category.name
     placeholder: wboyz.simplecatalog::lang.category.name_placeholder
+    required: true
     span: left
 
   slug:
     label: wboyz.simplecatalog::lang.category.slug
     span: right
     placeholder: wboyz.simplecatalog::lang.category.slug_placeholder
+    required: true
     attributes:
         data-input-preset: 'input[name="Category[name]"]'
         

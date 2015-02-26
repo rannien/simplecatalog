@@ -14,11 +14,12 @@ class CreateProductsTable extends Migration
             $table->increments('id');
             $table->integer('category_id');
             $table->string('name', 150);
-            $table->string('image');
+            $table->string('featured_image');
             $table->string('slug', 150)->index();
             $table->string('short_description', 150)->nullable();
             $table->mediumText('description')->nullable();
-            $table->decimal('quantity', 19, 4);
+            $table->tinyInteger('quantity');
+            $table->decimal('price', 19, 4);
             $table->tinyInteger('status')->default(1);
             $table->timestamps();
         });

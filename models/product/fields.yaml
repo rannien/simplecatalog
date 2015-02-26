@@ -3,6 +3,54 @@
 # ===================================
 
 fields:
-    id:
-        label: ID
-        disabled: true
+    name:
+        label: wboyz.simplecatalog::lang.product.name
+        span: left
+        placeholder: wboyz.simplecatalog::lang.product.name_placeholder
+        required: true
+
+    slug:
+        label: wboyz.simplecatalog::lang.product.slug
+        span: right
+        placeholder: wboyz.simplecatalog::lang.product.slug_placeholder
+        required: true
+        attributes:
+            data-input-preset: 'input[name="Product[name]"]'
+            data-input-preset-type: slug
+            data-input-preset-closest-parent: form
+            
+    short_description:
+        label: wboyz.simplecatalog::lang.product.short_description
+        placeholder: wboyz.simplecatalog::lang.product.s_description_placeholder
+        type: textarea
+        size: small
+    
+    description:
+        label: wboyz.simplecatalog::lang.product.description
+        placeholder: wboyz.simplecatalog::lang.product.description_placeholder
+        type: textarea
+        
+secondaryTabs:
+    stretch: true
+    fields:
+        category:
+            tab: Kategoriak #wboyz.simplecatalog::lang.post.tab_categories
+            type: relation
+            commentAbove: wboyz.simplecatalog::lang.post.categories_comment
+            placeholder: wboyz.simplecatalog::lang.post.categories_placeholder
+
+        status:
+            tab: Manage
+            label: Status
+            type: balloon-selector
+            options:
+             - Draft
+             - Review
+
+        featured_image:
+            tab: Kep #wboyz.simplecatalog::lang.post.tab_manage
+            label: wboyz.simplecatalog::lang.post.featured_image
+            type: fileupload
+            mode: image
+            imageWidth: 600
+            imageHeight: 600
