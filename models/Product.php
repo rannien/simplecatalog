@@ -43,7 +43,9 @@ class Product extends Model
     public $morphTo = [];
     public $morphOne = [];
     public $morphMany = [];
-    public $attachOne = [];
+    public $attachOne = [
+        'featured_image' => ['System\Models\File']
+    ];
     public $attachMany = [];
 
 }

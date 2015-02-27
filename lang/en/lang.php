@@ -40,10 +40,12 @@ return [
         'categories_comment' => 'Select a category the blog post belongs to',
         'categories_placeholder' => 'There are no categories, you should create one first!',
         'tab_manage' => 'Manage',
-        'image' => 'Featured Image',
+        'featured_image' => 'Featured Image',
         'delete_confirm' => 'Do you really want to delete this product?',
         'close_confirm' => 'The product is not saved.',
-        'return_to_posts' => 'Return to products list'
+        'return_to_posts' => 'Return to products list',
+        'status_e' => 'Enabled',
+        'status_d' => 'Disabled',
     ],
     'categories' => [
         'list_title' => 'Manage the catalog categories',

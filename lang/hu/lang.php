@@ -40,10 +40,12 @@ return [
         'categories_comment' => 'Válassz egy kategóriát, amibea termék tartozik',
         'categories_placeholder' => 'Még nincsenek kategóriák, először hozz létre egyet!',
         'tab_manage' => 'Kezelés',
-        'image' => 'Kiemelt kép',
+        'featured_image' => 'Kiemelt kép',
         'delete_confirm' => 'Biztosan törölni szeretnéd ezt a terméket?',
         'close_confirm' => 'A termék nincs elmentve.',
-        'return_to_posts' => 'Visszatérés a terméklistához'
+        'return_to_posts' => 'Visszatérés a terméklistához',
+        'status_e' => 'Engedélyezve',
+        'status_d' => 'Visszavonva',
     ],
     'categories' => [
         'list_title' => 'Katalógus kategóriáinak kezelése',

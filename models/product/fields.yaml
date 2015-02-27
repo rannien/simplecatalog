@@ -18,23 +18,33 @@ fields:
             data-input-preset: 'input[name="Product[name]"]'
             data-input-preset-type: slug
             data-input-preset-closest-parent: form
-            
-    short_description:
-        label: wboyz.simplecatalog::lang.product.short_description
-        placeholder: wboyz.simplecatalog::lang.product.s_description_placeholder
-        type: textarea
-        size: small
     
-    description:
-        label: wboyz.simplecatalog::lang.product.description
-        placeholder: wboyz.simplecatalog::lang.product.description_placeholder
-        type: textarea
         
-secondaryTabs:
-    stretch: true
+tabs:
     fields:
+        short_description:
+            label: wboyz.simplecatalog::lang.product.short_description
+            span: left
+            placeholder: wboyz.simplecatalog::lang.product.s_description_placeholder
+            type: textarea
+            size: small
+            
+        featured_image:
+            label: wboyz.simplecatalog::lang.product.featured_image
+            type: fileupload
+            span: right
+            size: small
+            mode: image
+            imageWidth: 600
+            imageHeight: 600
+
+        description:
+            label: wboyz.simplecatalog::lang.product.description
+            placeholder: wboyz.simplecatalog::lang.product.description_placeholder
+            type: richeditor
+
         category:
-            tab: Kategoriak #wboyz.simplecatalog::lang.post.tab_categories
+            tab: wboyz.simplecatalog::lang.product.tab_category
             type: relation
             commentAbove: wboyz.simplecatalog::lang.post.categories_comment
             placeholder: wboyz.simplecatalog::lang.post.categories_placeholder
@@ -43,14 +53,7 @@ secondaryTabs:
             tab: Manage
             label: Status
             type: balloon-selector
+            default: 1
             options:
-             - Draft
-             - Review
-
-        featured_image:
-            tab: Kep #wboyz.simplecatalog::lang.post.tab_manage
-            label: wboyz.simplecatalog::lang.post.featured_image
-            type: fileupload
-            mode: image
-            imageWidth: 600
-            imageHeight: 600
+                1: wboyz.simplecatalog::lang.product.status_e
+                2: wboyz.simplecatalog::lang.product.status_d
