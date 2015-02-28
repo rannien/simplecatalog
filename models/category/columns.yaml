@@ -6,3 +6,6 @@ columns:
     name:
         label: wboyz.simplecatalog::lang.category.name
         searchable: true
+    slug:
+        label: wboyz.simplecatalog::lang.category.slug
+        searchable: true

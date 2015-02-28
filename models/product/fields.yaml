@@ -1,59 +1,62 @@
 # ===================================
 #  Form Field Definitions
-# ===================================
-
-fields:
-    name:
-        label: wboyz.simplecatalog::lang.product.name
-        span: left
-        placeholder: wboyz.simplecatalog::lang.product.name_placeholder
-        required: true
-
-    slug:
-        label: wboyz.simplecatalog::lang.product.slug
-        span: right
-        placeholder: wboyz.simplecatalog::lang.product.slug_placeholder
-        required: true
-        attributes:
-            data-input-preset: 'input[name="Product[name]"]'
-            data-input-preset-type: slug
-            data-input-preset-closest-parent: form
-    
+# ===================================  
         
 tabs:
     fields:
-        short_description:
-            label: wboyz.simplecatalog::lang.product.short_description
+        name:
+            label: wboyz.simplecatalog::lang.product.name
+            tab: wboyz.simplecatalog::lang.product.tab_info
             span: left
+            placeholder: wboyz.simplecatalog::lang.product.name_placeholder
+            required: true
+
+        slug:
+            label: wboyz.simplecatalog::lang.product.slug
+            tab: wboyz.simplecatalog::lang.product.tab_info
+            span: right
+            placeholder: wboyz.simplecatalog::lang.product.slug_placeholder
+            required: true
+            attributes:
+                data-input-preset: 'input[name="Product[name]"]'
+                data-input-preset-type: slug
+                data-input-preset-closest-parent: form
+                
+        short_description:
+            tab: wboyz.simplecatalog::lang.product.tab_info
+            label: wboyz.simplecatalog::lang.product.short_description
             placeholder: wboyz.simplecatalog::lang.product.s_description_placeholder
             type: textarea
             size: small
             
-        featured_image:
-            label: wboyz.simplecatalog::lang.product.featured_image
-            type: fileupload
-            span: right
-            size: small
-            mode: image
-            imageWidth: 600
-            imageHeight: 600
-
         description:
+            tab: wboyz.simplecatalog::lang.product.tab_info
             label: wboyz.simplecatalog::lang.product.description
             placeholder: wboyz.simplecatalog::lang.product.description_placeholder
             type: richeditor
-
-        category:
-            tab: wboyz.simplecatalog::lang.product.tab_category
-            type: relation
-            commentAbove: wboyz.simplecatalog::lang.post.categories_comment
-            placeholder: wboyz.simplecatalog::lang.post.categories_placeholder
-
+            
         status:
-            tab: Manage
+            tab: wboyz.simplecatalog::lang.product.tab_category
             label: Status
             type: balloon-selector
+            span: right
             default: 1
             options:
                 1: wboyz.simplecatalog::lang.product.status_e
                 2: wboyz.simplecatalog::lang.product.status_d
+
+        category:
+            tab: wboyz.simplecatalog::lang.product.tab_category
+            type: relation
+            span: left
+            commentAbove: wboyz.simplecatalog::lang.product.category_comment
+            placeholder: wboyz.simplecatalog::lang.product.category_placeholder
+            
+        featured_image:
+            tab: wboyz.simplecatalog::lang.product.tab_category
+            label: wboyz.simplecatalog::lang.product.featured_image
+            type: fileupload
+            span: left
+            mode: image
+            imageWidth: 250
+            imageHeight: 250

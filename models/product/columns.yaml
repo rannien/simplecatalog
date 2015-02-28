@@ -7,6 +7,10 @@ columns:
   name:
     label: wboyz.simplecatalog::lang.product.name
     searchable: true
+    
+  slug:
+    label: wboyz.simplecatalog::lang.product.slug
+    searchable: true
 
   category:
     label: wboyz.simplecatalog::lang.product.category
