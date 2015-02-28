@@ -25,18 +25,20 @@ return [
     'product' => [
         'name' => 'Név',
         'name_placeholder' => 'Új termék neve',
+        'price' => 'Ár',
+        'ranking' => 'Sorrend',
         'slug' => 'Slug',
         'slug_placeholder' => 'uj-termek-url',
         'short_description' => 'Rövid leírás',
         's_description_placeholder' => 'Új termék rövid leírása',
         'description' => 'Leírás',
         'description_placeholder' => 'Új termék leírása',
-        'quantity' => 'Új termék darabszáma',
+        'quantity' => 'Darabszám',
         'category' => 'Kategória',
         'created' => 'Létrehozva',
         'updated' => 'Frissítve',
         'tab_edit' => 'Szerkesztés',
-        'tab_category' => 'Egyéb',
+        'tab_stock' => 'Készlet',
         'category_comment' => 'Válassz egy kategóriát, amibe a termék tartozik',
         'category_placeholder' => 'Még nincsenek kategóriák, először hozz létre egyet!',
         'tab_info' => 'Információ',
@@ -66,4 +68,8 @@ return [
     'settings' => [
         'category_title' => 'Kategória lista',
     ],
+    'component_list' => [
+        'name' => 'Termék lista',
+        'description' => 'A katalógusban felvett termékek listája'
+    ]
 ];

@@ -34,29 +34,48 @@ tabs:
             label: wboyz.simplecatalog::lang.product.description
             placeholder: wboyz.simplecatalog::lang.product.description_placeholder
             type: richeditor
+        
+        price:
+            tab: wboyz.simplecatalog::lang.product.tab_stock
+            label: wboyz.simplecatalog::lang.product.price
+            required: true
+            span: left
+            type: number
+
+        category:
+            tab: wboyz.simplecatalog::lang.product.tab_stock
+            type: relation
+            span: right
+            commentAbove: wboyz.simplecatalog::lang.product.category_comment
+            placeholder: wboyz.simplecatalog::lang.product.category_placeholder
+            
+        quantity:
+            tab: wboyz.simplecatalog::lang.product.tab_stock
+            label: wboyz.simplecatalog::lang.product.quantity
+            span: left
+            type: number
+            
+        featured_image:
+            tab: wboyz.simplecatalog::lang.product.tab_stock
+            label: wboyz.simplecatalog::lang.product.featured_image
+            type: fileupload
+            span: right
+            mode: image
+            imageWidth: 250
+            imageHeight: 250        
+            
+        ranking:
+            tab: wboyz.simplecatalog::lang.product.tab_stock
+            label: wboyz.simplecatalog::lang.product.ranking
+            span: left
+            type: number
             
         status:
-            tab: wboyz.simplecatalog::lang.product.tab_category
+            tab: wboyz.simplecatalog::lang.product.tab_stock
             label: Status
             type: balloon-selector
-            span: right
+            span: left
             default: 1
             options:
                 1: wboyz.simplecatalog::lang.product.status_e
                 2: wboyz.simplecatalog::lang.product.status_d
-
-        category:
-            tab: wboyz.simplecatalog::lang.product.tab_category
-            type: relation
-            span: left
-            commentAbove: wboyz.simplecatalog::lang.product.category_comment
-            placeholder: wboyz.simplecatalog::lang.product.category_placeholder
-            
-        featured_image:
-            tab: wboyz.simplecatalog::lang.product.tab_category
-            label: wboyz.simplecatalog::lang.product.featured_image
-            type: fileupload
-            span: left
-            mode: image
-            imageWidth: 250
-            imageHeight: 250

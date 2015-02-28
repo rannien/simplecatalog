@@ -59,6 +59,13 @@ class Plugin extends PluginBase
             'wboyz.simplecatalog.access_products'    => ['label' => 'wboyz.simplecatalog::lang.products.list_title'],
             'wboyz.simplecatalog.access_categories'  => ['label' => 'wboyz.simplecatalog::lang.categories.list_title']
         ];
-    }   
+    }
+    
+    public function registerComponents()
+{
+    return [
+        'Wboyz\SimpleCatalog\Components\ProductList' => 'productList'
+    ];
+}
 
 }

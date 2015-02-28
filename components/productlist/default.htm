@@ -1,0 +1,11 @@
+{% set products = __SELF__.products %}
+
+{% for product in products %}
+    {{ product.name }}
+    {{ product.slug }}
+    {{ product.category }}
+    {{ product.short_description }}
+    {{ product.price }}
+    {{ product.description|raw }}
+    {{ product.quantity }}
+{% endfor %}

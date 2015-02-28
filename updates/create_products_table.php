@@ -21,6 +21,7 @@ class CreateProductsTable extends Migration
             $table->tinyInteger('quantity');
             $table->decimal('price', 19, 4);
             $table->tinyInteger('status')->default(1);
+            $table->integer('ranking');
             $table->timestamps();
         });
     }

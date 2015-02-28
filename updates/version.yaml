@@ -10,3 +10,6 @@
         - Amount renamed to quantity
 1.0.5:  
         - Image renamed to featured_image
+        
+1.0.6:
+        - Ranking added. Now the products could be sorted

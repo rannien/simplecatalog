@@ -25,18 +25,20 @@ return [
     'product' => [
         'name' => 'Name',
         'name_placeholder' => 'New product name',
+        'price' => 'Price',
+        'ranking' => 'Ranking',
         'slug' => 'Slug',
         'slug_placeholder' => 'new-product-slug',
         'short_description' => 'Short description',
         's_description_placeholder' => 'New product short description',
         'description' => 'Description',
         'description_placeholder' => 'New product description',
-        'quantity' => 'New product quantity',
+        'quantity' => 'Quantity',
         'category' => 'Category',
         'created' => 'Created',
         'updated' => 'Updated',
         'tab_edit' => 'Edit',
-        'tab_category' => 'Misc',
+        'tab_stock' => 'Stock',
         'category_comment' => 'Select a category the catalog product belongs to',
         'category_placeholder' => 'There are no categories, you should create one first!',
         'tab_info' => 'Information',
@@ -68,4 +70,8 @@ return [
     'settings' => [
         'category_title' => 'Category List',
     ],
+    'component_list' => [
+        'name' => 'Product list',
+        'description' => 'The list of products added to the catalog'
+    ]
 ];
