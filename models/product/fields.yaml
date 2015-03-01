@@ -79,3 +79,11 @@ tabs:
             options:
                 1: wboyz.simplecatalog::lang.product.status_e
                 2: wboyz.simplecatalog::lang.product.status_d
+
+        images:
+            tab: wboyz.simplecatalog::lang.product.tab_images
+            label: wboyz.simplecatalog::lang.product.images
+            type: fileupload
+            mode: image
+            imageWidth: 200
+            imageHeight: 200

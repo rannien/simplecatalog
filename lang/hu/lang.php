@@ -42,6 +42,8 @@ return [
         'category_comment' => 'Válassz egy kategóriát, amibe a termék tartozik',
         'category_placeholder' => 'Még nincsenek kategóriák, először hozz létre egyet!',
         'tab_info' => 'Információ',
+        'tab_images' => 'Képek',
+        'images' => 'Termék képek',
         'featured_image' => 'Kiemelt kép',
         'delete_confirm' => 'Biztosan törölni szeretnéd ezt a terméket?',
         'close_confirm' => 'A termék nincs elmentve.',

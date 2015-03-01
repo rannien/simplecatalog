@@ -46,6 +46,8 @@ class Product extends Model
     public $attachOne = [
         'featured_image' => ['System\Models\File']
     ];
-    public $attachMany = [];
+    public $attachMany = [
+        'images' => ['System\Models\File']
+    ];
 
 }

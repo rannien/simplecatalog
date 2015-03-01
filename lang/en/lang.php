@@ -42,6 +42,8 @@ return [
         'category_comment' => 'Select a category the catalog product belongs to',
         'category_placeholder' => 'There are no categories, you should create one first!',
         'tab_info' => 'Information',
+        'tab_images' => 'Images',
+        'images' => 'Product Images',
         'featured_image' => 'Featured Image',
         'delete_confirm' => 'Do you really want to delete this product?',
         'close_confirm' => 'The product is not saved.',
