@@ -25,7 +25,11 @@ class ProductList extends ComponentBase
     {
         // if status = 1
         // order by ranking asc
-        $this->products = Product::where('status', '=', 1);
+        //$this->products = Product::where('status', '==', 1);
+        
+        $this->products = Product::where('status', '=', '1')
+            ->orderBy('ranking', 'desc')
+            ->get();
     }
 
 }

@@ -1,11 +1,21 @@
 {% set products = __SELF__.products %}
 
+
+
+<div class="row">
 {% for product in products %}
-    {{ product.name }}
-    {{ product.slug }}
-    {{ product.category }}
-    {{ product.short_description }}
-    {{ product.price }}
-    {{ product.description|raw }}
-    {{ product.quantity }}
+    
+<div class="col-sm-4 col-md-3">
+    <div class="thumbnail">
+      <img src="{{ product.featured_image.path }}" alt="{{ product.name }}">
+      <div class="caption">
+        <h3><a href="{{ product.slug }}">{{ product.name }}</a></h3>
+        <p>{{ product.short_description }}</p>
+        <p><a href="#" class="btn btn-primary" role="button">Megnéz</a></p>
+        <p class="pull-left">{{ product.price }} Ft</p>
+        <p class="pull-right">Készleten: {{ product.quantity }} db</p>
+      </div>
+    </div>
+  </div>
 {% endfor %}
+</div>

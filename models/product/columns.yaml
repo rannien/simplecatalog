@@ -11,13 +11,21 @@ columns:
   slug:
     label: wboyz.simplecatalog::lang.product.slug
     searchable: true
+    invisible: true
 
   category:
     label: wboyz.simplecatalog::lang.product.category
     relation: category
     select: name
     searchable: true
-    sortable: false
+    
+  quantity:
+    label: wboyz.simplecatalog::lang.product.quantity
+    searchable: false
+    
+  ranking:
+    label: wboyz.simplecatalog::lang.product.ranking
+    searchable: false
 
   created_at:
     label: wboyz.simplecatalog::lang.product.created

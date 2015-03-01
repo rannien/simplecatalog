@@ -13,3 +13,6 @@
         
 1.0.6:
         - Ranking added. Now the products could be sorted
+1.0.7: 
+        - Data seed added plus a little fix about the featured images
+        - seed_all_tables.php
