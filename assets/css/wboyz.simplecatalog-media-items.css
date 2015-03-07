@@ -1,4 +1,3 @@
-
 .media {
   margin-top: 15px;
 }
@@ -43,4 +42,8 @@
 .media-list {
   padding-left: 0;
   list-style: none;
+}
+
+.media-right.nowrap {
+    white-space: nowrap;
 }
