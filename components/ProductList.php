@@ -23,10 +23,9 @@ class ProductList extends ComponentBase
     
     public function onRun()
     {
-        // if status = 1
-        // order by ranking asc
-        //$this->products = Product::where('status', '==', 1);
+        $this->addCss('/plugins/wboyz/simplecatalog/assets/css/wboyz.simplecatalog-media-items.css');   
         
+        // load the products
         $this->products = Product::where('status', '=', '1')
             ->orderBy('ranking', 'desc')
             ->get();
