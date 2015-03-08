@@ -1,3 +1,6 @@
+.media:nth-child(2n) {
+  background: #eee;
+}
 .media {
   margin-top: 15px;
 }
@@ -11,6 +14,7 @@
 }
 .media-body {
   width: 10000px;
+  padding-top: 10px;
 }
 .media-object {
   display: block;
@@ -43,7 +47,7 @@
   padding-left: 0;
   list-style: none;
 }
-
 .media-right.nowrap {
-    white-space: nowrap;
+  white-space: nowrap;
+  padding: 10px;
 }

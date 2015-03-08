@@ -4,13 +4,19 @@
 {% for product in products %}
 <div class="media">
     <div class="media-left media-middle">
-        <a href="{{ product.slug }}"><img src="{{ product.featured_image.thumb(250, 170, 'exact') }}" alt="{{ product.name }}" />
+        <a href="{{ product.slug }}"><img src="{{ product.featured_image.thumb(250, 170, 'exact') }}" alt="{{ product.name }}" class="img-responsive" />
             </a>
     </div>
     <div class="media-body">
         <h4 class="media-heading"><a href="{{ product.slug }}">{{ product.name }}</a></h4>
+        <p>
+            {% if product.quantity == 0 %}
+                Elfogyott
+            {% else %}
+                Készleten: {{ product.quantity }}
+            {% endif %}
+            </p>
         <p>{{ product.short_description }}</p>
-        
     </div>
     <div class="media-right nowrap">
         {{ product.price|number_format(0, ',', ' ') }} Ft
