@@ -8,14 +8,16 @@
         - Small fixes on string lenght
 1.0.4:
         - Amount renamed to quantity
-1.0.5:  
+1.0.5:
         - Image renamed to featured_image
-        
+
 1.0.6:
         - Ranking added. Now the products could be sorted
-1.0.7: 
+1.0.7:
         - Data seed added plus a little fix about the featured images
         - seed_all_tables.php
 1.0.9:
         - New attributes in the products table
         - create_products_table.php
+1.1.0:
+        - Almost beta version
