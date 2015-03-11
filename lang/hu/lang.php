@@ -72,6 +72,14 @@ return [
     ],
     'component_list' => [
         'name' => 'Termék lista',
-        'description' => 'A katalógusban felvett termékek listája'
+        'description' => 'A katalógusban felvett termékek listája',
+        'profile' => 'Termék oldal',
+        'profile_description' => 'A katalógus termék oldalának a neve a "Megtekint" linkekhez. Ezt a tulajdonságot használja az alapértelmezett komponens.',
+    ],
+    'component_profile' => [
+        'name' => 'Termék profil',
+        'description' => 'Egy konkrét termék részletes profil oldala',
+        'product_slug' => 'Termék URL azonosító',
+        'product_slug_description' => 'Megkeres egy terméket az URL azonosítója alapján'
     ]
 ];

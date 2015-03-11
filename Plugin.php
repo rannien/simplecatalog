@@ -64,7 +64,8 @@ class Plugin extends PluginBase
     public function registerComponents()
 {
     return [
-        'Wboyz\SimpleCatalog\Components\ProductList' => 'productList'
+        'Wboyz\SimpleCatalog\Components\ProductList' => 'productList',
+        'Wboyz\SimpleCatalog\Components\Product' => 'productProfile'
     ];
 }
 

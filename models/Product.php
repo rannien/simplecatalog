@@ -12,7 +12,7 @@ class Product extends Model
      * @var string The database table used by the model.
      */
     public $table = 'wboyz_simplecatalog_products';
-    
+
     /*
      * Validation
      */
@@ -49,5 +49,29 @@ class Product extends Model
     public $attachMany = [
         'images' => ['System\Models\File']
     ];
+
+    public function scopeIsEnabled($query, $slug)
+    {
+        return $query
+            ->where('status', '=', '1')
+            ->where('slug', '=', $slug)
+        ;
+    }
+
+    /**
+     * Sets the "url" attribute with a URL to this object
+     * @param string $pageName
+     * @param Cms\Classes\Controller $controller
+     */
+    public function setUrl($pageName, $controller)
+    {
+
+        $params = [
+            'id' => $this->id,
+            'slug' => $this->slug,
+        ];
+
+        return $this->url = $controller->pageUrl($pageName, $params);
+    }
 
 }

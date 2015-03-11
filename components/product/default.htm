@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-sm-6">
+        <img src="{{ product.featured_image.thumb(500, 300, 'exact') }}" alt="{{ product.name }}" class="img-responsive" />
+    </div>
+    <div class="col-sm-6">
+        <h2>{{ product.name }}</h2>
+        <p>Készleten: {{ product.quantity }} db</p>
+        <p>Ár: {{ product.price }}</p>
+        <p>{{ product.short_description }}</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        {{ product.description|raw }}
+    </div>
+</div>

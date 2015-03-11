@@ -4,11 +4,11 @@
 {% for product in products %}
 <div class="media">
     <div class="media-left media-middle">
-        <a href="{{ product.slug }}"><img src="{{ product.featured_image.thumb(250, 170, 'exact') }}" alt="{{ product.name }}" class="img-responsive" />
+        <a href="{{ product.url }}"><img src="{{ product.featured_image.thumb(250, 170, 'exact') }}" alt="{{ product.name }}" class="img-responsive" />
             </a>
     </div>
     <div class="media-body">
-        <h4 class="media-heading"><a href="{{ product.slug }}">{{ product.name }}</a></h4>
+        <h4 class="media-heading"><a href="{{ product.url }}">{{ product.name }}</a></h4>
         <p>
             {% if product.quantity == 0 %}
                 Elfogyott

@@ -74,6 +74,14 @@ return [
     ],
     'component_list' => [
         'name' => 'Product list',
-        'description' => 'The list of products added to the catalog'
+        'description' => 'The list of products added to the catalog',
+        'profile' => 'Product page',
+        'profile_description' => 'Name of the catalog product page file for the "View" links. This property is used by the default component partial.',
+    ],
+    'component_profile' => [
+        'name' => 'Product profile',
+        'description' => 'A selected product\'s detailed profile page',
+        'product_slug' => 'Product slug',
+        'product_slug_description' => 'Look up the product using the supplied slug value.',
     ]
 ];

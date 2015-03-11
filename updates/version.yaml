@@ -16,3 +16,6 @@
 1.0.7: 
         - Data seed added plus a little fix about the featured images
         - seed_all_tables.php
+1.0.9:
+        - New attributes in the products table
+        - create_products_table.php
